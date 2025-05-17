@@ -1,26 +1,43 @@
+/* Style the nav container */
 nav {
-    nav ul {
-        list-style: none;
-        padding: 0;
-    }
-    nav ul li {
-        display: inline;
-        margin: 0 1em;
-    }
-    nav ul li a {
-        text-decoration: none;
-        color: #000000;
-        font-weight: bold;
-    }
-    nav ul li a:hover {
-        color: #246ea5;
-    }
+    font-family: "Arial", sans-serif;
+    background-color: #eef1f3;
+    padding: 1em;
+    text-align: center;
 }
+
+/* Remove the bullets and default padding from the list */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;          /* also reset margin for cleaner layout */
+}
+
+/* Lay out the items side-by-side */
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+/* Style the links */
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    color: #246ea5;
+}
+
 h1{
+    font-family: "Arial", sans-serif;
     text-align: center;
     color: #246ea5;
 }
 p {
+    font-family: "OCR A Std", monospace;
     text-align: justify;
     margin: 1em 0;
     color: #032946;
