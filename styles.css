@@ -1,0 +1,14 @@
+nav {
+    background-color: #eef1f3;
+    padding: 1em;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #246ea5;
+}
+p {
+    text-align: justify;
+    margin: 1em 0;
+    color: #032946;
+}
