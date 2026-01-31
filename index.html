@@ -2,39 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=":width=device-width, initial scale=1.0">
-    <title>Ramiro Bugueno</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiro Bugueno - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">RB</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="layout">
-        <div class="content-box">
-            <h1>Welcome to my website!</h1>
-            <p>
-                This is a simple website created with HTML and CSS.
-            </p>
-        <h1>
-            Hello! My name is Ramiro
-        </h1>
-        <p>
-            I'm a software engineer student with a passion for web development and open source.
-        </p>
-        <p>
-            I am from Chile and currently pursuing a Bachelor's degree in Software Engineering.
-        </p>
-    </div>
-    </div>
-    <aside class="sidebar">
-        <h2>Sidebar</h2>
-        <p>This is a sidebar with additional information.</p>
-    </aside>
 
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Hello, I'm Ramiro</h1>
+                <p class="subtitle">Software Engineering Student & Web Developer</p>
+                <p class="description">
+                    Passionate about creating clean, efficient web applications and contributing to open source projects.
+                </p>
+                <div class="cta-buttons">
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <h2>Based in Chile</h2>
+                    <p>
+                        Currently pursuing a Bachelor's degree in Software Engineering, 
+                        focusing on modern web technologies and best practices in software development.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ramiro Bugueno. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>

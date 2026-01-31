@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content=":width=device-width, initial scale=1.0">
-  <title>Ramiro Bugueno</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Ramiro Bugueno</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
-        <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">RB</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-  <h1>
-    About
-  </h1>
-  <p>
-    Here goes my info
-  </p>
 
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>About Me</h1>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-text">
+                    <h2>Who I Am</h2>
+                    <p>
+                        I'm a software engineering student from Chile with a deep passion for web development 
+                        and open source contributions. I believe in writing clean, maintainable code and 
+                        creating user-centered digital experiences.
+                    </p>
+                    <p>
+                        My journey in software development has led me to explore various technologies and 
+                        frameworks, always with the goal of building solutions that make a difference.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h2>Skills & Technologies</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h3>Frontend</h3>
+                            <p>HTML, CSS, JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Backend</h3>
+                            <p>Node.js, Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Tools</h3>
+                            <p>Git, VS Code, Linux</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>Learning</h3>
+                            <p>React, TypeScript, Docker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-section">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>Bachelor's in Software Engineering</h3>
+                        <p class="education-location">Chile</p>
+                        <p class="education-status">Currently Pursuing</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ramiro Bugueno. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
