@@ -1,50 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramiro's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <div id="particles-js"></div>
-
-    <nav class="glass-nav">
-        <div class="logo">Your<span>Name</span></div>
+<nav class="glass-nav">
+    <div class="logo">Ramiro<span>Bugueño</span></div>
+    <div class="nav-right">
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
-            <a href="#contact" class="btn-talk">Let's Talk <i class="fas fa-arrow-right"></i></a>
         </div>
-    </nav>
-
-    <header class="hero">
-        <div class="hero-card">
-            <div class="profile-side">
-                <div class="image-glow"></div>
-                <img src="KS7A3266-2.jpg" alt="Profile" class="profile-img">
-            </div>
-            
-            <div class="text-side">
-                <p class="intro">Hi! I'm Ramiro Bugueño, a Specialist on a mission to create</p>
-                <h1 id="hero-title">Functional & <span class="gradient-text">Intuitive</span> <br>Digital Experiences.</h1>
-                
-                <div class="role-switch">
-                    <span>Designer 🎨</span>
-                    <label class="switch">
-                        <input type="checkbox" id="roleToggle">
-                        <span class="slider"></span>
-                    </label>
-                    <span>Developer 💻</span>
-                </div>
-            </div>
+        <div class="theme-switch-wrapper">
+            <i class="fas fa-sun"></i>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <i class="fas fa-moon"></i>
         </div>
-    </header>
+        <a href="#contact" class="btn-talk">Let's Talk</a>
+    </div>
+</nav>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
-</body>
-</html>
+<header class="hero-v2">
+    <div class="hero-content">
+        <span class="badge">Available for Projects</span>
+        <h1 id="hero-title">Crafting <span class="gradient-text">Digital Value</span> Through Design & Code.</h1>
+        <p>Specialist in functional systems and intuitive user experiences.</p>
+        <div class="hero-btns">
+            <a href="#work" class="btn-primary">View My Work</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+        </div>
+    </div>
+    <div class="hero-image-container">
+        <div class="image-border-decoration"></div>
+        <img src="KS7A3266-2.jpg" alt="Ramiro Bugueño" class="hero-img-new">
+    </div>
+</header>

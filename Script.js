@@ -1,34 +1,31 @@
+// Theme Toggle Logic
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
+// Fixed Magnetic Background
 particlesJS("particles-js", {
     "particles": {
-        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-        "color": { "value": "#ffffff" },
-        "opacity": { "value": 0.2 },
-        "size": { "value": 2 },
-        "line_linked": {
-            "enable": true,
-            "distance": 150,
-            "color": "#ffffff",
-            "opacity": 0.1,
-            "width": 1
-        },
-        "move": { "enable": true, "speed": 1 }
+        "number": { "value": 80 },
+        "color": { "value": "#888888" },
+        "line_linked": { "enable": true, "opacity": 0.1 },
+        "move": { "enable": true, "speed": 0.8 }
     },
     "interactivity": {
-        "detect_on": "window", // Changed from 'canvas' to 'window' for better reach
+        "detect_on": "window", // This ensures it tracks mouse across the whole UI
         "events": {
-            "onhover": {
-                "enable": true,
-                "mode": "grab" // This is the "magnetic" effect
-            }
+            "onhover": { "enable": true, "mode": "grab" }
         },
         "modes": {
-            "grab": {
-                "distance": 200,
-                "line_linked": { "opacity": 0.5 }
-            }
+            "grab": { "distance": 250, "line_linked": { "opacity": 0.4 } }
         }
-    },
-    "retina_detect": true
+    }
 });
-
-/* Keep your existing toggle listener below this */
