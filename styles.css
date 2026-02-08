@@ -226,6 +226,40 @@ input:checked + .slider:before {
     background-color: white;
 }
 
+/* Resume Download Button */
+.resume-download {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: var(--accent-glow);
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent);
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.resume-download i {
+    font-size: 16px;
+}
+
+.resume-download:hover {
+    background-color: var(--accent);
+    color: var(--bg);
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px var(--accent-glow);
+}
+
+.resume-download:active {
+    transform: scale(0.95);
+}
+
+
 /* Mobile Menu Toggle */
 .mobile-menu-toggle {
     display: none;
@@ -1272,6 +1306,15 @@ h1 {
         bottom: 4px;
     }
 
+    .resume-download {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .resume-download i {
+        font-size: 14px;
+    }
+
     input:checked + .slider:before {
         transform: translateX(20px);
     }
@@ -1402,5 +1445,14 @@ h1 {
 
     .mobile-menu-toggle span {
         width: 22px;
+    }
+
+    .resume-download {
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    .resume-download i {
+        font-size: 12px;
     }
 }
