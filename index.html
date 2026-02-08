@@ -3,68 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name - Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <a href="#home" class="logo">YN</a>
-            <div class="nav-links">
-                <a href="#home" class="nav-link active">Home</a>
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">YN</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#projects" class="nav-link">Projects</a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
             </div>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-                <span class="theme-icon sun">☀</span>
-                <span class="theme-icon moon">☾</span>
-            </button>
         </div>
     </nav>
-
-    <!-- Cursor follower -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-outline" id="cursorOutline"></div>
 
     <!-- Home Section -->
     <section id="home" class="section home-section">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <span class="greeting fade-in">Hello, I'm</span>
-                    <h1 class="hero-title fade-in-delay-1">
-                        <span class="name-line">Your Name</span>
-                    </h1>
-                    <p class="hero-subtitle fade-in-delay-2">
-                        <span class="typed-text"></span>
-                        <span class="cursor-blink">|</span>
-                    </p>
-                    <div class="hero-cta fade-in-delay-3">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#about" class="btn btn-secondary">Learn More</a>
-                    </div>
-                </div>
-                <div class="hero-visual fade-in-delay-2">
-                    <div class="geometric-shape shape-1"></div>
-                    <div class="geometric-shape shape-2"></div>
-                    <div class="geometric-shape shape-3"></div>
-                    <div class="code-snippet">
-                        <div class="code-line"><span class="code-keyword">const</span> developer = {</div>
-                        <div class="code-line">  <span class="code-property">name</span>: <span class="code-string">'Your Name'</span>,</div>
-                        <div class="code-line">  <span class="code-property">skills</span>: [<span class="code-string">'creativity'</span>, <span class="code-string">'code'</span>],</div>
-                        <div class="code-line">  <span class="code-property">passion</span>: <span class="code-string">'building'</span></div>
-                        <div class="code-line">};</div>
-                    </div>
+            <div class="home-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Your Name</h1>
+                <h2 class="tagline">I build things for the web.</h2>
+                <p class="description">
+                    I'm a full-stack developer specializing in building exceptional digital experiences. 
+                    Currently, I'm focused on creating accessible, human-centered products.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#about" class="btn btn-outline">More About Me</a>
                 </div>
             </div>
-            
-            <div class="scroll-indicator">
-                <span>Scroll</span>
-                <div class="scroll-line"></div>
+            <div class="floating-elements">
+                <div class="float-card card-1">
+                    <div class="code-line"><span class="comment">// Clean code</span></div>
+                    <div class="code-line"><span class="keyword">const</span> passion = <span class="string">"development"</span>;</div>
+                </div>
+                <div class="float-card card-2">
+                    <div class="stats-item">
+                        <div class="stats-number">20+</div>
+                        <div class="stats-label">Projects</div>
+                    </div>
+                </div>
+                <div class="float-card card-3">
+                    <div class="stats-item">
+                        <div class="stats-number">3+</div>
+                        <div class="stats-label">Years Exp</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -73,61 +83,44 @@
     <section id="about" class="section about-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">01</span>
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title">
+                    <span class="section-number">01.</span> About Me
+                </h2>
             </div>
-            
             <div class="about-content">
                 <div class="about-text">
-                    <p class="about-intro">
-                        I'm a passionate developer who loves creating beautiful, functional web experiences. 
-                        My journey in web development started with curiosity and has evolved into a deep 
-                        commitment to crafting exceptional digital solutions.
+                    <p>
+                        Hello! I'm a developer who enjoys creating things that live on the internet. 
+                        My interest in web development started back in 2020 when I decided to try 
+                        building my first website — turns out I loved it!
                     </p>
-                    
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Frontend</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">React</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Design</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">UI/UX</span>
-                                <span class="skill-tag">Responsive</span>
-                                <span class="skill-tag">Animation</span>
-                                <span class="skill-tag">Typography</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h3>Tools</h3>
-                            <div class="skill-tags">
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">VS Code</span>
-                                <span class="skill-tag">Chrome DevTools</span>
-                            </div>
-                        </div>
-                    </div>
+                    <p>
+                        Fast-forward to today, and I've had the privilege of working on a variety of 
+                        projects ranging from e-commerce platforms to creative portfolios. My main 
+                        focus these days is building accessible, inclusive products and digital 
+                        experiences.
+                    </p>
+                    <p>Here are a few technologies I've been working with recently:</p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>React</li>
+                        <li>Node.js</li>
+                        <li>HTML & CSS</li>
+                        <li>TypeScript</li>
+                        <li>Git</li>
+                        <li>Tailwind CSS</li>
+                        <li>REST APIs</li>
+                    </ul>
                 </div>
-                
-                <div class="about-visual">
-                    <div class="experience-card">
-                        <div class="exp-number">3+</div>
-                        <div class="exp-label">Years Experience</div>
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="profile-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
                     </div>
-                    <div class="experience-card">
-                        <div class="exp-number">20+</div>
-                        <div class="exp-label">Projects Completed</div>
-                    </div>
-                    <div class="interactive-grid" id="interactiveGrid"></div>
                 </div>
             </div>
         </div>
@@ -137,102 +130,143 @@
     <section id="projects" class="section projects-section">
         <div class="container">
             <div class="section-header">
-                <span class="section-number">02</span>
-                <h2 class="section-title">Selected Projects</h2>
+                <h2 class="section-title">
+                    <span class="section-number">02.</span> Things I've Built
+                </h2>
             </div>
             
-            <div class="projects-grid">
-                <article class="project-card" data-project="1">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <div class="placeholder-icon">🎨</div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-view">View Project</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
+            <div class="projects-list">
+                <!-- Project 1 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
                         <h3 class="project-title">E-Commerce Platform</h3>
-                        <p class="project-description">
-                            A modern, fully responsive e-commerce solution with cart functionality, 
-                            product filtering, and smooth animations.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">React</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">API</span>
+                        <div class="project-description">
+                            <p>
+                                A modern e-commerce web application built with React and Node.js. 
+                                Features include user authentication, product filtering, shopping cart, 
+                                and secure checkout with Stripe integration.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                            <li>Stripe API</li>
+                            <li>CSS Modules</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </article>
-                
-                <article class="project-card" data-project="2">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <div class="placeholder-icon">📱</div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-view">View Project</span>
+                        <div class="project-img-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="9" cy="21" r="1"></circle>
+                                <circle cx="20" cy="21" r="1"></circle>
+                                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                            </svg>
                         </div>
                     </div>
-                    <div class="project-info">
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-item project-reverse">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
                         <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            An intuitive task tracker with drag-and-drop functionality, 
-                            local storage, and a clean minimalist design.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">LocalStorage</span>
-                            <span class="project-tag">UI/UX</span>
+                        <div class="project-description">
+                            <p>
+                                An intuitive task tracker with drag-and-drop functionality, priority levels, 
+                                due dates, and categories. Built with vanilla JavaScript and local storage 
+                                for data persistence.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>JavaScript</li>
+                            <li>HTML5</li>
+                            <li>CSS Grid</li>
+                            <li>Local Storage</li>
+                            <li>Drag & Drop API</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </article>
-                
-                <article class="project-card" data-project="3">
                     <div class="project-image">
-                        <div class="project-placeholder">
-                            <div class="placeholder-icon">🌐</div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-view">View Project</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3 class="project-title">Portfolio Website</h3>
-                        <p class="project-description">
-                            A creative portfolio showcasing interactive animations, 
-                            smooth transitions, and thoughtful typography.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">HTML</span>
-                            <span class="project-tag">CSS</span>
-                            <span class="project-tag">Animation</span>
+                        <div class="project-img-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 11 12 14 22 4"></polyline>
+                                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                            </svg>
                         </div>
                     </div>
-                </article>
-                
-                <article class="project-card" data-project="4">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <div class="placeholder-icon">⚡</div>
-                        </div>
-                        <div class="project-overlay">
-                            <span class="project-view">View Project</span>
-                        </div>
-                    </div>
-                    <div class="project-info">
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-item">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
                         <h3 class="project-title">Weather Dashboard</h3>
-                        <p class="project-description">
-                            Real-time weather data visualization with charts, 
-                            location search, and beautiful gradient backgrounds.
-                        </p>
-                        <div class="project-tags">
-                            <span class="project-tag">API Integration</span>
-                            <span class="project-tag">Charts</span>
-                            <span class="project-tag">Responsive</span>
+                        <div class="project-description">
+                            <p>
+                                A beautiful weather application that displays real-time weather data, 
+                                5-day forecasts, and interactive maps. Features location search and 
+                                dynamic backgrounds based on weather conditions.
+                            </p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>Weather API</li>
+                            <li>Chart.js</li>
+                            <li>Geolocation</li>
+                            <li>Tailwind</li>
+                        </ul>
+                        <div class="project-links">
+                            <a href="#" class="project-link" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                </article>
+                    <div class="project-image">
+                        <div class="project-img-placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -241,21 +275,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always open to discussing new projects and opportunities.</p>
-                </div>
-                <div class="footer-section">
-                    <div class="social-links">
-                        <a href="https://github.com" class="social-link" target="_blank">GitHub</a>
-                        <a href="https://linkedin.com" class="social-link" target="_blank">LinkedIn</a>
-                        <a href="mailto:your.email@example.com" class="social-link">Email</a>
-                        <a href="https://twitter.com" class="social-link" target="_blank">Twitter</a>
-                    </div>
-                </div>
+                <h3 class="footer-title">Get In Touch</h3>
+                <p class="footer-text">
+                    I'm currently looking for new opportunities. Whether you have a question 
+                    or just want to say hi, I'll try my best to get back to you!
+                </p>
+                <a href="mailto:your.email@example.com" class="btn btn-outline">Say Hello</a>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Your Name. Crafted with care.</p>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <p class="copyright">Designed & Built by Your Name</p>
             </div>
         </div>
     </footer>
