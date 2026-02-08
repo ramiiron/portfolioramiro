@@ -1,17 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const roleToggle = document.getElementById('roleToggle');
-    const heroTitle = document.querySelector('h1');
-    const accentText = document.querySelector('.accent-text');
+/* Initialize Particles Background */
+particlesJS("particles-js", {
+  "particles": {
+    "number": { "value": 80 },
+    "color": { "value": "#ffffff" },
+    "shape": { "type": "circle" },
+    "opacity": { "value": 0.5 },
+    "size": { "value": 2 },
+    "move": { "enable": true, "speed": 1 }
+  }
+});
 
-    roleToggle.addEventListener('change', () => {
-        if (roleToggle.checked) {
-            // DEVELOPER MODE
-            heroTitle.innerHTML = 'Building Robust & Scalable <br><span class="accent-text">Software Systems.</span>';
-            document.body.style.setProperty('--accent', '#3498db'); // Blue
-        } else {
-            // DESIGNER MODE
-            heroTitle.innerHTML = 'Functional & Powerful <br><span class="accent-text">Digital Experiences.</span>';
-            document.body.style.setProperty('--accent', '#e67e22'); // Orange/Bronze accent
-        }
-    });
+/* Role Toggle Logic */
+const toggle = document.getElementById('roleToggle');
+toggle.addEventListener('change', () => {
+    if(toggle.checked) {
+        document.querySelector('.text-gradient').style.backgroundImage = "linear-gradient(to right, #00c6ff, #0072ff)";
+        // Add more style shifts for 'Developer' mode
+    } else {
+        document.querySelector('.text-gradient').style.backgroundImage = "linear-gradient(to right, #6dd5ed, #2193b0)";
+        // Add more style shifts for 'Designer' mode
+    }
 });

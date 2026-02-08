@@ -5,52 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-icon-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <div class="logo">YOURNAME</div>
+    <div class="glow-container">
+        <div class="glow-orb"></div>
+    </div>
+    <div id="particles-js"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">YOUR<span>NAME</span></div>
         <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
             <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="resume.pdf" class="btn-outline">Resume</a>
-            <a href="#contact" class="btn-fill">Let's Talk</a>
+            <a href="#" class="btn-outline">Download Resume <i class="fas fa-download"></i></a>
+            <a href="#contact" class="btn-nav-talk">Let's Talk <i class="fas fa-arrow-right"></i></a>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <div class="profile-frame">
-                <img src="your-photo.jpg" alt="Profile Photo">
+    <main class="hero">
+        <div class="hero-layout">
+            <div class="hero-image-area">
+                <div class="image-border-animation">
+                    <img src="your-photo.jpg" alt="Your Name" class="profile-img">
+                </div>
             </div>
-            <div class="hero-text">
-                <p class="intro-tag">Hi! I'm Your Name, a Specialist on a mission to create</p>
-                <h1>Functional & Powerful <br><span class="accent-text">Digital Systems.</span></h1>
-                <button class="btn-fill">Let's Talk!</button>
+            
+            <div class="hero-text-area">
+                <p class="greeting">Hi! I'm <strong>Your Name</strong>, a Developer on a mission to create</p>
+                <h1 class="glitch-text">Functional & <span class="text-gradient">Powerful</span> <br>Digital Systems.</h1>
+                <button class="btn-primary">Let's Talk!</button>
+            </div>
+
+            <div class="social-sidebar">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
             </div>
         </div>
 
-        <div class="toggle-container">
-            <span>Designer</span>
+        <div class="role-selector">
+            <span class="role-label">Designer 🎨</span>
             <label class="switch">
                 <input type="checkbox" id="roleToggle">
-                <span class="slider round"></span>
+                <span class="slider"></span>
             </label>
-            <span>Developer</span>
+            <span class="role-label">Developer 💻</span>
         </div>
-    </header>
+    </main>
 
-    <section id="work" class="grid-section">
-        <h2 class="section-title">Latest Work</h2>
-        <div class="project-grid" id="projectGrid">
-            <div class="project-card">
-                <div class="project-img"></div>
-                <h3>System Architecture</h3>
-                <p>Fullstack Application</p>
-            </div>
-        </div>
-    </section>
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
