@@ -115,7 +115,7 @@ body {
     z-index: 2;
     letter-spacing: -0.5px;
     white-space: nowrap; /* Prevent wrapping */
-    flex-shrink: 1; /* Allow some shrinking if needed */
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .logo span {
