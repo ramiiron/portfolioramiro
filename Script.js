@@ -1,22 +1,21 @@
-/* Initialize Particle Background */
+/* Particles Background */
 particlesJS("particles-js", {
     "particles": {
-        "number": { "value": 50 },
+        "number": { "value": 60 },
         "color": { "value": "#ffffff" },
-        "opacity": { "value": 0.1 },
+        "opacity": { "value": 0.2 },
         "size": { "value": 2 },
         "move": { "enable": true, "speed": 1 }
     }
 });
 
-/* Role Switcher Logic */
 const toggle = document.getElementById('roleToggle');
 const title = document.getElementById('hero-title');
 
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
         // DEVELOPER MODE
-        title.innerHTML = 'Functional & <span class="gradient-text">Robust</span> <br>Digital Systems.';
+        title.innerHTML = 'Building Robust & <span class="gradient-text">Scalable</span> <br>Digital Systems.';
         document.documentElement.style.setProperty('--accent', '#3498db');
     } else {
         // DESIGNER MODE
