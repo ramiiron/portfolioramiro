@@ -2,10 +2,10 @@ const toggle = document.getElementById('themeToggle');
 
 toggle.addEventListener('change', () => {
     if (toggle.checked) {
-        // Toggle Checked (Slid to Sun) -> Switch to Light Mode
+        // Switch to Light Mode when Checked
         document.documentElement.setAttribute('data-theme', 'light');
     } else {
-        // Toggle Unchecked (Slid to Moon) -> Revert to Dark Mode
+        // Default to Dark Mode
         document.documentElement.setAttribute('data-theme', 'dark');
     }
 });
