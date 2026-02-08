@@ -3,64 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramiro Bugueño | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ramiro Bugueño | IT Professional & Project Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="bg-glow-top"></div>
     <div class="bg-glow-bottom"></div>
+    <div class="grain-overlay"></div>
 
     <nav class="glass-nav">
         <div class="logo">Ramiro<span>Bugueño</span></div>
         
         <div class="nav-links-center">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#work">Work</a>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </div>
 
         <div class="nav-right">
             <div class="theme-switch-wrapper">
-                <i class="fas fa-moon"></i>
+                <i class="fas fa-moon theme-icon"></i>
                 <label class="theme-switch">
                     <input type="checkbox" id="themeToggle">
                     <div class="slider round"></div>
                 </label>
-                <i class="fas fa-sun"></i>
+                <i class="fas fa-sun theme-icon"></i>
             </div>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#home" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#experience" class="mobile-nav-link">Experience</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+    </div>
 
     <header id="home" class="hero-v2">
         <div class="hero-content">
             <span class="badge">Available for Projects</span>
-            <h1>Crafting <span class="gradient-text">Digital Value</span> Through Design & Code.</h1>
-            <p class="hero-subtext">Specialist in functional systems and intuitive user experiences.</p>
+            <h1>
+                <span class="hero-greeting">Hi, I'm Ramiro</span>
+                <span class="hero-main">Crafting <span class="gradient-text">Digital Solutions</span></span>
+                <span class="hero-tagline">Through IT Excellence & Project Leadership</span>
+            </h1>
+            <p class="hero-subtext">IT Support Specialist & Project Manager with proven expertise in technical problem-solving, project execution, and delivering measurable results across diverse industries.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">1,700+</span>
+                    <span class="stat-label">Cases Resolved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">$600K</span>
+                    <span class="stat-label">Projects Managed</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">3.83</span>
+                    <span class="stat-label">GPA</span>
+                </div>
+            </div>
             <div class="hero-btns">
-                <a href="#work" class="btn-primary">View My Work</a>
-                <a href="#contact" class="btn-secondary">Get in Touch</a>
+                <a href="#experience" class="btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    <span>Get in Touch</span>
+                </a>
             </div>
         </div>
         <div class="hero-image-container">
-            <img src="KS7A3266-2.jpg" alt="Ramiro Bugueño" class="hero-img-new">
+            <div class="image-decoration"></div>
+            <img src="KS7A3266-2.jpg" alt="Ramiro Bugueño - IT Professional" class="hero-img-new">
+            <div class="floating-badge badge-1">
+                <i class="fas fa-code"></i>
+                <span>IT Support</span>
+            </div>
+            <div class="floating-badge badge-2">
+                <i class="fas fa-project-diagram"></i>
+                <span>PM Expert</span>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="content-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="placeholder-box">
-            <p>Reserved for your professional background and story.</p>
+    <section id="about" class="content-section about-section">
+        <div class="section-header">
+            <span class="section-label">Get to Know Me</span>
+            <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">I'm a bilingual IT professional and project manager with a unique blend of technical expertise and leadership experience across technology and energy sectors.</p>
+                    <p>Currently pursuing my Associate of Science in Information Technology at Ensign College (GPA: 3.83), I bring hands-on experience from IT support roles to project management positions handling budgets up to $600K.</p>
+                    <p>My journey started with a Bachelor's in Electrical Engineering from Universidad Tecnológica de Chile, where I developed a strong foundation in technical problem-solving and systems thinking. This background, combined with my IT certifications and practical experience, allows me to bridge the gap between technical teams and business stakeholders effectively.</p>
+                    <p>I'm passionate about leveraging technology to solve real-world problems and thrive in environments where I can apply both my technical skills and project management expertise to deliver meaningful results.</p>
+                </div>
+                <div class="quick-facts">
+                    <h3>Quick Facts</h3>
+                    <div class="fact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Based in Salt Lake City, Utah</span>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-language"></i>
+                        <span>Bilingual (English/Spanish)</span>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Excel Certified</span>
+                    </div>
+                    <div class="fact-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>5+ Years Professional Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="education-timeline">
+                <h3>Education</h3>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2027</span>
+                        <h4>Associate of Science - Information Technology</h4>
+                        <p class="timeline-location">Ensign College, Salt Lake City, Utah</p>
+                        <p class="timeline-gpa">GPA: 3.830</p>
+                        <div class="timeline-highlights">
+                            <span>Critical Thinking</span>
+                            <span>Programming</span>
+                            <span>Excel Certified</span>
+                            <span>Troubleshooting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2015 - 2020</span>
+                        <h4>Bachelor in Electrical Engineering</h4>
+                        <p class="timeline-location">Universidad Tecnológica de Chile, Santiago</p>
+                        <div class="timeline-highlights">
+                            <span>Agile PM</span>
+                            <span>Quality Management</span>
+                            <span>Process Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="content-section">
-        <h2 class="section-title">Let's Talk</h2>
-        <div class="placeholder-box">
-            <p>Ready for your contact form or social links.</p>
+    <section id="experience" class="content-section experience-section">
+        <div class="section-header">
+            <span class="section-label">My Journey</span>
+            <h2 class="section-title">Professional Experience</h2>
+        </div>
+        <div class="experience-grid">
+            <div class="experience-card" data-index="1">
+                <div class="card-header">
+                    <div class="company-info">
+                        <h3>IT Support</h3>
+                        <p class="company-name">GSD, The Church of Jesus Christ of Latter-day Saints</p>
+                    </div>
+                    <span class="date-badge">2023 - 2025</span>
+                </div>
+                <div class="card-body">
+                    <ul class="achievement-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Resolved over <strong>1,700+ technical cases</strong> across desktops, laptops, and various operating systems</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered high-quality IT support by acting as first point of contact, accurately diagnosing hardware and software issues</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Maintained a professional, customer-focused approach while handling complex technical challenges</span>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Technical Support</span>
+                        <span>Hardware/Software</span>
+                        <span>Customer Service</span>
+                        <span>Troubleshooting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card" data-index="2">
+                <div class="card-header">
+                    <div class="company-info">
+                        <h3>Project Manager Jr.</h3>
+                        <p class="company-name">ABB</p>
+                    </div>
+                    <span class="date-badge">2022 - 2023</span>
+                </div>
+                <div class="card-body">
+                    <ul class="achievement-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Designed and executed efficient project-tracking using Microsoft Project, streamlining budget management and timeline tracking</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Managed multiple projects with budgets ranging from <strong>$500-600K</strong>, coordinating with contractors and stakeholders</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Optimized cost efficiency by proactively solving challenges and maintaining clear communication</span>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>MS Project</span>
+                        <span>Budget Management</span>
+                        <span>Stakeholder Coordination</span>
+                        <span>Cost Optimization</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card" data-index="3">
+                <div class="card-header">
+                    <div class="company-info">
+                        <h3>Project Manager Jr.</h3>
+                        <p class="company-name">Colbun Soluciones by Efizity</p>
+                    </div>
+                    <span class="date-badge">2021 - 2022</span>
+                </div>
+                <div class="card-body">
+                    <ul class="achievement-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Developed Excel-based financial projection tool providing cost breakdowns and savings estimates for prospective customers</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Managed <strong>3 energy projects</strong> by coordinating cross-functional teams and ensuring timely completion</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Maintained transparent communication with stakeholders and senior management throughout project lifecycle</span>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Excel Development</span>
+                        <span>Financial Modeling</span>
+                        <span>Team Coordination</span>
+                        <span>Energy Sector</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card" data-index="4">
+                <div class="card-header">
+                    <div class="company-info">
+                        <h3>Community Manager</h3>
+                        <p class="company-name">Regus</p>
+                    </div>
+                    <span class="date-badge">2015 - 2017</span>
+                </div>
+                <div class="card-body">
+                    <ul class="achievement-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Delivered exceptional customer service daily by addressing inquiries and resolving issues efficiently</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Organized <strong>20+ professional networking events</strong>, facilitating community building</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sustained positive relationships with diverse clientele in co-working environment</span>
+                        </li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span>Event Management</span>
+                        <span>Customer Relations</span>
+                        <span>Community Building</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <section id="skills" class="content-section skills-section">
+        <div class="section-header">
+            <span class="section-label">What I Bring</span>
+            <h2 class="section-title">Skills & Expertise</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technical Skills</h3>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">IT Support & Troubleshooting</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Microsoft Office Suite</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Programming Languages</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Software Applications</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Project Management</h3>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Agile Project Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Budget & Contract Management</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Operations Planning</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Quality & Process Optimization</span>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <div class="category-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="soft-skills-grid">
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-comments"></i>
+                        <span>Communication</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-users-cog"></i>
+                        <span>Team Collaboration</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-crown"></i>
+                        <span>Leadership</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Analytical Thinking</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-clock"></i>
+                        <span>Time Management</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-handshake"></i>
+                        <span>Customer Service</span>
+                    </div>
+                    <div class="soft-skill-badge">
+                        <i class="fas fa-bullseye"></i>
+                        <span>Critical Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section contact-section">
+        <div class="section-header">
+            <span class="section-label">Let's Connect</span>
+            <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p class="contact-intro">I'm always interested in hearing about new opportunities, collaborations, or just connecting with fellow professionals. Feel free to reach out!</p>
+                <div class="contact-methods">
+                    <a href="mailto:bugueno.ramiro@gmail.com" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Email</span>
+                            <span class="method-value">bugueno.ramiro@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+18016806440" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">Phone</span>
+                            <span class="method-value">+1 (801) 680-6440</span>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ramiro-bugueño-b728b8b4/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="method-details">
+                            <span class="method-label">LinkedIn</span>
+                            <span class="method-value">Connect with me</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">Ramiro<span>Bugueño</span></div>
+                <p>IT Professional & Project Manager</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/ramiro-bugueño-b728b8b4/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:bugueno.ramiro@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <!-- PLACEHOLDER: Add GitHub, Twitter, or other social links as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ramiro Bugueño. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
