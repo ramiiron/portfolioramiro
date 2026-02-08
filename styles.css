@@ -79,3 +79,18 @@ body {
 }
 input:checked + .slider { background-color: var(--accent); }
 input:checked + .slider:before { transform: translateX(28px); }
+
+.role-switch {
+    display: flex;
+    align-items: center;
+    gap: 15px;      /* Creates space so text doesn't touch the toggle */
+    margin-top: 2rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block; /* Essential to prevent layout collapse */
+    width: 60px;
+    height: 32px;
+    flex-shrink: 0;        /* Prevents the toggle from getting squished */
+}

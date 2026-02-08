@@ -1,25 +1,34 @@
-/* Particles Background */
 particlesJS("particles-js", {
     "particles": {
-        "number": { "value": 60 },
+        "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
         "color": { "value": "#ffffff" },
         "opacity": { "value": 0.2 },
         "size": { "value": 2 },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.1,
+            "width": 1
+        },
         "move": { "enable": true, "speed": 1 }
-    }
+    },
+    "interactivity": {
+        "detect_on": "window", // Changed from 'canvas' to 'window' for better reach
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab" // This is the "magnetic" effect
+            }
+        },
+        "modes": {
+            "grab": {
+                "distance": 200,
+                "line_linked": { "opacity": 0.5 }
+            }
+        }
+    },
+    "retina_detect": true
 });
 
-const toggle = document.getElementById('roleToggle');
-const title = document.getElementById('hero-title');
-
-toggle.addEventListener('change', () => {
-    if (toggle.checked) {
-        // DEVELOPER MODE
-        title.innerHTML = 'Building Robust & <span class="gradient-text">Scalable</span> <br>Digital Systems.';
-        document.documentElement.style.setProperty('--accent', '#3498db');
-    } else {
-        // DESIGNER MODE
-        title.innerHTML = 'Functional & <span class="gradient-text">Intuitive</span> <br>Digital Experiences.';
-        document.documentElement.style.setProperty('--accent', '#e67e22');
-    }
-});
+/* Keep your existing toggle listener below this */
