@@ -1,7 +1,7 @@
-// Initialize background particles
+/* Initialize Particle Background */
 particlesJS("particles-js", {
     "particles": {
-        "number": { "value": 40 },
+        "number": { "value": 50 },
         "color": { "value": "#ffffff" },
         "opacity": { "value": 0.1 },
         "size": { "value": 2 },
@@ -9,6 +9,7 @@ particlesJS("particles-js", {
     }
 });
 
+/* Role Switcher Logic */
 const toggle = document.getElementById('roleToggle');
 const title = document.getElementById('hero-title');
 
