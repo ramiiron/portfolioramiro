@@ -1,23 +1,27 @@
-/* Initialize Particles Background */
+/* Background Particles */
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 80 },
+    "number": { "value": 50 },
     "color": { "value": "#ffffff" },
     "shape": { "type": "circle" },
-    "opacity": { "value": 0.5 },
-    "size": { "value": 2 },
-    "move": { "enable": true, "speed": 1 }
+    "opacity": { "value": 0.2 },
+    "size": { "value": 3 },
+    "move": { "enable": true, "speed": 0.8 }
   }
 });
 
-/* Role Toggle Logic */
+/* Content Switcher */
 const toggle = document.getElementById('roleToggle');
+const gradientText = document.querySelector('.gradient-text');
+
 toggle.addEventListener('change', () => {
     if(toggle.checked) {
-        document.querySelector('.text-gradient').style.backgroundImage = "linear-gradient(to right, #00c6ff, #0072ff)";
-        // Add more style shifts for 'Developer' mode
+        // Developer Side
+        gradientText.innerText = "Digital Systems";
+        document.documentElement.style.setProperty('--accent', '#3498db');
     } else {
-        document.querySelector('.text-gradient').style.backgroundImage = "linear-gradient(to right, #6dd5ed, #2193b0)";
-        // Add more style shifts for 'Designer' mode
+        // Designer Side
+        gradientText.innerText = "Digital Experiences";
+        document.documentElement.style.setProperty('--accent', '#e67e22');
     }
 });
