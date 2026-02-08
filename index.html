@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="designer">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Portfolio | Professional</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="particles-js"></div> <nav class="glass-nav">
+    <div id="particles-js"></div>
+
+    <nav class="glass-nav">
         <div class="logo">YOUR<span>NAME</span></div>
         <div class="nav-links">
             <a href="#home">Home</a>
@@ -19,28 +21,28 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-container">
-            <div class="profile-wrapper">
-                <div class="glow-ring"></div>
+    <section class="hero">
+        <div class="hero-container glass-card">
+            <div class="profile-section">
+                <div class="image-bg-blob"></div>
                 <img src="your-photo.jpg" alt="Profile" class="profile-img">
             </div>
-            
-            <div class="hero-content">
-                <p class="pre-title">Hi! I'm Your Name, a Developer on a mission to create</p>
-                <h1 class="main-title">Functional & <span class="gradient-text">Powerful</span> <br>Digital Systems.</h1>
+
+            <div class="content-section">
+                <p class="intro">Hi! I'm Your Name, a Specialist on a mission to create</p>
+                <h1 id="hero-title">Functional & <span class="gradient-text">Intuitive</span> <br>Digital Experiences.</h1>
                 
-                <div class="role-toggle-wrapper">
-                    <span>Designer 👩🏻‍🎨</span>
+                <div class="role-switcher">
+                    <span class="role-label">Designer 👩🏻‍🎨</span>
                     <label class="switch">
                         <input type="checkbox" id="roleToggle">
-                        <span class="slider round"></span>
+                        <span class="slider"></span>
                     </label>
-                    <span>Developer 👩🏻‍💻</span>
+                    <span class="role-label">Developer 👩🏻‍💻</span>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>

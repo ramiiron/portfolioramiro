@@ -1,86 +1,66 @@
 :root {
-    --bg: #0b0b0f;
+    --bg: #0a0a0c;
+    --accent: #3498db;
+    --text: #ffffff;
     --glass: rgba(255, 255, 255, 0.03);
-    --border: rgba(255, 255, 255, 0.1);
-    --accent: #3498db; /* Masculine Blue */
+    --border: rgba(255, 255, 255, 0.08);
 }
 
 body {
     background-color: var(--bg);
-    color: #fff;
+    color: var(--text);
     font-family: 'Outfit', sans-serif;
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden; /* Keeps it one-page sleek */
 }
 
-#particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-/* Glassmorphism Nav */
-.glass-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 10%;
+/* Glassmorphism Card */
+.glass-card {
     background: var(--glass);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid var(--border);
-    position: fixed;
-    width: 80%;
-    z-index: 100;
-}
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero-container {
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--border);
+    border-radius: 40px;
+    padding: 4rem;
     display: flex;
     align-items: center;
     gap: 4rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
 }
 
-/* Animated Profile Ring */
-.profile-wrapper {
-    position: relative;
-    width: 280px;
-    height: 280px;
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* Organic shape */
-    object-fit: cover;
-    border: 2px solid var(--border);
-}
-
+/* Hero Title & Gradient */
+h1 { font-size: 3.5rem; line-height: 1.1; margin: 1rem 0; }
 .gradient-text {
-    background: linear-gradient(90deg, #3498db, #8e44ad);
+    background: linear-gradient(90deg, var(--accent), #8e44ad);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* Modern Toggle */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+/* Moving Background Blob */
+.image-bg-blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: var(--accent);
+    filter: blur(80px);
+    opacity: 0.2;
+    z-index: -1;
+    animation: move 10s infinite alternate;
 }
 
-.slider.round {
-    border-radius: 34px;
-    background-color: #222;
+@keyframes move {
+    from { transform: translate(-20px, -20px); }
+    to { transform: translate(20px, 20px); }
 }
 
-input:checked + .slider {
-    background-color: var(--accent);
+/* Toggle Switch Styling */
+.switch { position: relative; width: 60px; height: 30px; }
+.slider {
+    position: absolute; cursor: pointer; top: 0; left: 0; right: 0; bottom: 0;
+    background: #222; border-radius: 30px; transition: 0.4s;
 }
+.slider:before {
+    position: absolute; content: ""; height: 22px; width: 22px; left: 4px; bottom: 4px;
+    background: white; border-radius: 50%; transition: 0.4s;
+}
+input:checked + .slider { background: var(--accent); }
+input:checked + .slider:before { transform: translateX(30px); }

@@ -1,27 +1,25 @@
-/* Background Particles */
+// Initialize background particles
 particlesJS("particles-js", {
-  "particles": {
-    "number": { "value": 50 },
-    "color": { "value": "#ffffff" },
-    "shape": { "type": "circle" },
-    "opacity": { "value": 0.2 },
-    "size": { "value": 3 },
-    "move": { "enable": true, "speed": 0.8 }
-  }
+    "particles": {
+        "number": { "value": 40 },
+        "color": { "value": "#ffffff" },
+        "opacity": { "value": 0.1 },
+        "size": { "value": 2 },
+        "move": { "enable": true, "speed": 1 }
+    }
 });
 
-/* Content Switcher */
 const toggle = document.getElementById('roleToggle');
-const gradientText = document.querySelector('.gradient-text');
+const title = document.getElementById('hero-title');
 
 toggle.addEventListener('change', () => {
-    if(toggle.checked) {
-        // Developer Side
-        gradientText.innerText = "Digital Systems";
+    if (toggle.checked) {
+        // DEVELOPER MODE
+        title.innerHTML = 'Functional & <span class="gradient-text">Robust</span> <br>Digital Systems.';
         document.documentElement.style.setProperty('--accent', '#3498db');
     } else {
-        // Designer Side
-        gradientText.innerText = "Digital Experiences";
+        // DESIGNER MODE
+        title.innerHTML = 'Functional & <span class="gradient-text">Intuitive</span> <br>Digital Experiences.';
         document.documentElement.style.setProperty('--accent', '#e67e22');
     }
 });
