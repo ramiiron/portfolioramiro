@@ -1283,7 +1283,7 @@ h1 {
     .nav-right {
         display: flex;
         align-items: center;
-        gap: 15px;
+        gap: 10px;
     }
 
     .theme-switch-wrapper {
@@ -1307,12 +1307,20 @@ h1 {
     }
 
     .resume-download {
-        padding: 8px 12px;
-        font-size: 12px;
+        padding: 8px;
+        font-size: 0;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
     }
 
     .resume-download i {
-        font-size: 14px;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .resume-download span {
+        display: none;
     }
 
     input:checked + .slider:before {
@@ -1447,12 +1455,24 @@ h1 {
         width: 22px;
     }
 
+    .nav-right {
+        gap: 8px;
+    }
+
     .resume-download {
-        padding: 6px 10px;
-        font-size: 11px;
+        padding: 6px;
+        font-size: 0;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
     }
 
     .resume-download i {
-        font-size: 12px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .resume-download span {
+        display: none;
     }
 }
