@@ -1,35 +1,67 @@
-<nav class="glass-nav">
-    <div class="logo">Ramiro<span>Bugueño</span></div>
-    <div class="nav-right">
-        <div class="nav-links">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramiro Bugueño | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-glow-top"></div>
+    <div class="bg-glow-bottom"></div>
+
+    <nav class="glass-nav">
+        <div class="logo">Ramiro<span>Bugueño</span></div>
+        
+        <div class="nav-links-center">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#work">Work</a>
         </div>
-        <div class="theme-switch-wrapper">
-            <i class="fas fa-sun"></i>
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-            <i class="fas fa-moon"></i>
-        </div>
-        <a href="#contact" class="btn-talk">Let's Talk</a>
-    </div>
-</nav>
 
-<header class="hero-v2">
-    <div class="hero-content">
-        <span class="badge">Available for Projects</span>
-        <h1 id="hero-title">Crafting <span class="gradient-text">Digital Value</span> Through Design & Code.</h1>
-        <p>Specialist in functional systems and intuitive user experiences.</p>
-        <div class="hero-btns">
-            <a href="#work" class="btn-primary">View My Work</a>
-            <a href="#contact" class="btn-secondary">Get in Touch</a>
+        <div class="nav-right">
+            <div class="theme-switch-wrapper">
+                <i class="fas fa-moon"></i>
+                <label class="theme-switch">
+                    <input type="checkbox" id="themeToggle">
+                    <div class="slider round"></div>
+                </label>
+                <i class="fas fa-sun"></i>
+            </div>
         </div>
-    </div>
-    <div class="hero-image-container">
-        <div class="image-border-decoration"></div>
-        <img src="KS7A3266-2.jpg" alt="Ramiro Bugueño" class="hero-img-new">
-    </div>
-</header>
+    </nav>
+
+    <header id="home" class="hero-v2">
+        <div class="hero-content">
+            <span class="badge">Available for Projects</span>
+            <h1>Crafting <span class="gradient-text">Digital Value</span> Through Design & Code.</h1>
+            <p class="hero-subtext">Specialist in functional systems and intuitive user experiences.</p>
+            <div class="hero-btns">
+                <a href="#work" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="KS7A3266-2.jpg" alt="Ramiro Bugueño" class="hero-img-new">
+        </div>
+    </header>
+
+    <section id="about" class="content-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="placeholder-box">
+            <p>Reserved for your professional background and story.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content-section">
+        <h2 class="section-title">Let's Talk</h2>
+        <div class="placeholder-box">
+            <p>Ready for your contact form or social links.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
